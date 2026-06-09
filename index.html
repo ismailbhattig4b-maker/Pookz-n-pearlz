@@ -6,50 +6,87 @@
   <style>
     body {
       font-family: Arial;
-      background: linear-gradient(120deg, #ffe6f2, #e6f0ff);
+      background: #f4f4ff;
+      margin: 0;
       text-align: center;
     }
 
     h1 {
-      color: #6a0dad;
+      background: #6a0dad;
+      color: white;
+      padding: 15px;
+      margin: 0;
+    }
+
+    .shop {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 20px;
     }
 
     .card {
       background: white;
-      width: 250px;
-      margin: 15px auto;
+      width: 220px;
+      margin: 10px;
       padding: 10px;
-      border-radius: 15px;
-      box-shadow: 0 0 10px #ddd;
+      border-radius: 10px;
+      box-shadow: 0 0 8px #ccc;
     }
 
     .card img {
       width: 100%;
-      border-radius: 10px;
+      border-radius: 8px;
+    }
+
+    .price {
+      color: green;
+      font-weight: bold;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 8px;
+      background: #ff9800;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
     }
   </style>
 </head>
 
 <body>
 
-<h1>✨ Pookz-n-Pearlz ✨</h1>
-<p>Handmade bracelet shop by Amnaaa~</p>
+<h1>🛍 Pookz-n-Pearlz Shop</h1>
+<p>Order by Email 📩</p>
 
-<div class="card">
-  <img src="Screenshot 2026-06-10 12.56.57 AM.png">
-  <p>Pink "Good" Bracelet</p>
-</div>
+<div class="shop">
 
-<div class="card">
-  <img src="Screenshot 2026-06-10 12.56.47 AM.png">
-  <p>Bracelet</p>
-</div>
+  <div class="card">
+    <img src="Screenshot 2026-06-10 12.56.57 AM.png">
+    <p>Pink Good Bracelet</p>
+    <p class="price">$3</p>
+    <a class="btn" href="mailto:yourgmail@gmail.com?subject=Order Pink Bracelet">Order</a>
+  </div>
 
-<div class="card">
-  <img src="Screenshot 2026-06-10 12.56.38 AM.png">
-  <p>Bracelet</p>
+  <div class="card">
+    <img src="Screenshot 2026-06-10 12.56.47 AM.png">
+    <p>Bracelet</p>
+    <p class="price">$4</p>
+    <a class="btn" href="mailto:yourgmail@gmail.com?subject=Order Bracelet">Order</a>
+  </div>
+
+  <div class="card">
+    <img src="Screenshot 2026-06-10 12.56.38 AM.png">
+    <p>Bracelet</p>
+    <p class="price">$5</p>
+    <a class="btn" href="mailto:yourgmail@gmail.com?subject=Order Bracelet">Order</a>
+  </div>
+
 </div>
 
 </body>
 </html>
+
 
