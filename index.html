@@ -2,14 +2,72 @@
 <html>
 <head>
   <title>Chilli's Bracelet Shop</title>
-</head>
-<body>
-  <h1>✨ Chilli's Bracelet Shop ✨</h1>
-  <p>Welcome to my handmade bracelet store!</p>
 
-  <h2>Bracelets</h2>
-  <p>🌈 Rainbow Bracelet - $3</p>
-  <p>⭐ Star Bracelet - $4</p>
-  <p>💖 Friendship Bracelet - $5</p>
+  <style>
+    body {
+      font-family: Arial;
+      background: linear-gradient(120deg, #ffe6f2, #e6f0ff);
+      text-align: center;
+    }
+
+    h1 {
+      color: #6a0dad;
+    }
+
+    .shop {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .card {
+      background: white;
+      width: 220px;
+      margin: 10px;
+      padding: 10px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px #ddd;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .price {
+      color: green;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>✨ Chilli's Bracelet Shop ✨</h1>
+<p>Welcome to my handmade bracelet store!</p>
+
+<div class="shop">
+
+  <div class="card">
+    <img src="rainbow_bracelet.jpg">
+    <p>🌈 Rainbow Bracelet</p>
+    <p class="price">$3</p>
+  </div>
+
+  <div class="card">
+    <img src="star_bracelet.jpg">
+    <p>⭐ Star Bracelet</p>
+    <p class="price">$4</p>
+  </div>
+
+  <div class="card">
+    <img src="friendship_bracelet.jpg">
+    <p>💖 Friendship Bracelet</p>
+    <p class="price">$5</p>
+  </div>
+
+</div>
+
 </body>
 </html>
