@@ -56,11 +56,30 @@ h1 {
 }
 
 .shop {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 18px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
   padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.card {
+  background: white;
+  width: 220px;
+  padding: 12px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px #f5b6d2;
+  transition: transform .2s;
+}
+
+.card:hover {
+  transform: scale(1.04);
+}
+
+.btn:hover {
+  background: #e84f9a;
+}
 }
 
 .card {
@@ -126,6 +145,11 @@ footer {
 \<p class="tagline">
 💎 A little sparkle for your everyday story ✨
 \</p>
+    <div class="emailbox">
+📩 Order by Email: <b>shop.pookznpearlz@gmail.com</b>
+</div>
+
+<div class="shop">
 <div class="card">
     <img src="Screenshot 2026-08-07 10.03.51 PM.png">
     <h3>🇵🇰 14 August Bracelet</h3>
