@@ -1,457 +1,440 @@
-    \<head>
-\<title>Pookz-n-Pearlz\</title>
-\<link rel="icon" type="image/png" href="Screenshot 2026-06-10 2.15.13 AM.png">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-\<link href="[https://fonts.googleapis.com/css2?family=Fredoka\:wght@400;500;600&display=swap](https://fonts.googleapis.com/css2?family=Fredoka\:wght@400;500;600\&display=swap)" rel="stylesheet
-">\<!DOCTYPE html>
-\<html>
-\<head>
-\<title>Pookz-n-Pearlz\</title>
+  <title>Pookz-n-Pearlz</title>
 
-\<link href="[https://fonts.googleapis.com/css2?family=Fredoka\:wght@400;500;600&display=swap](https://fonts.googleapis.com/css2?family=Fredoka\:wght@400;500;600\&display=swap)" rel="stylesheet">
+  <link rel="icon" type="image/png"
+        href="Screenshot 2026-06-10 2.15.13 AM.png">
 
-\<style>
-body {
-font-family: 'Fredoka', sans-serif;
-background: linear-gradient(135deg, #ffd6e7, #fff0f7);
-margin: 0;
-text-align: center;
-color: #555;
-}
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&display=swap"
+        rel="stylesheet">
 
-```
-.announcement {
-  background: #ffb6d9;
-  color: #8a2c5f;
-  padding: 12px;
-  font-weight: bold;
-  font-size: 15px;
-}
+  <style>
+    body {
+      font-family: 'Fredoka', sans-serif;
+      background: linear-gradient(135deg, #ffd6e7, #fff0f7);
+      margin: 0;
+      text-align: center;
+      color: #555;
+    }
 
-.logo {
-  width: 220px;
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
+    .announcement {
+      background: #ffb6d9;
+      color: #8a2c5f;
+      padding: 12px;
+      font-weight: bold;
+      font-size: 15px;
+    }
 
-h1 {
-  color: #ff4da6;
-  font-size: 42px;
-  margin: 5px;
-}
+    .logo {
+      width: 220px;
+      max-width: 80%;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
 
-.tagline {
-  color: #d96aa7;
-  font-size: 20px;
-  margin-bottom: 15px;
-}
+    h1 {
+      color: #ff4da6;
+      font-size: 42px;
+      margin: 5px;
+    }
 
-.emailbox {
-  background: white;
-  display: inline-block;
-  padding: 10px 18px;
-  border-radius: 15px;
-  box-shadow: 0 0 10px #f8b7d4;
-  margin-bottom: 20px;
-}
+    .tagline {
+      color: #d96aa7;
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
 
-.shop {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-  padding: 20px;
-  max-width: 1200px;
-  margin: auto;
-}
+    .emailbox {
+      background: white;
+      display: inline-block;
+      padding: 10px 18px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px #f8b7d4;
+      margin-bottom: 20px;
+    }
 
-.card {
-  background: white;
-  width: 220px;
-  padding: 12px;
-  border-radius: 20px;
-  box-shadow: 0 0 15px #f5b6d2;
-  transition: transform .2s;
-}
+    /* BRACELET GRID */
+    .shop {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      padding: 20px;
+      max-width: 1100px;
+      margin: 0 auto;
+      justify-items: center;
+    }
 
-.card:hover {
-  transform: scale(1.04);
-}
+    .card {
+      background: white;
+      width: 230px;
+      padding: 12px;
+      border-radius: 20px;
+      box-shadow: 0 0 15px #f5b6d2;
+      transition: transform 0.2s;
+      box-sizing: border-box;
+    }
 
-.btn:hover {
-  background: #e84f9a;
-}
-}
+    .card:hover {
+      transform: scale(1.04);
+    }
 
-.card {
-  background: white;
-  width: 230px;
-  padding: 12px;
-  border-radius: 20px;
-  box-shadow: 0 0 15px #f5b6d2;
-  transition: transform 0.2s;
-}
+    .card img {
+      width: 100%;
+      border-radius: 15px;
+      display: block;
+    }
 
-.card\:hover {
-  transform: scale(1.04);
-}
+    .price {
+      color: #e60073;
+      font-size: 18px;
+      font-weight: bold;
+    }
 
-.card img {
-  width: 100%;
-  border-radius: 15px;
-}
+    .btn {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 10px 16px;
+      background: #ff69b4;
+      color: white;
+      text-decoration: none;
+      border-radius: 12px;
+      font-weight: bold;
+    }
 
-.price {
-  color: #e60073;
-  font-size: 18px;
-  font-weight: bold;
-}
+    .btn:hover {
+      background: #e84f9a;
+    }
 
-.btn {
-  display: inline-block;
-  margin-top: 8px;
-  padding: 10px 16px;
-  background: #ff69b4;
-  color: white;
-  text-decoration: none;
-  border-radius: 12px;
-  font-weight: bold;
-}
+    footer {
+      margin-top: 30px;
+      padding: 20px;
+      color: #888;
+      font-size: 14px;
+    }
 
-.btn\:hover {
-  background: #e84f9a;
-}
+    /* TABLETS */
+    @media (max-width: 1000px) {
+      .shop {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
 
-footer {
-  margin-top: 30px;
-  padding: 20px;
-  color: #888;
-  font-size: 14px;
-}
-```
+    /* SMALL TABLETS */
+    @media (max-width: 750px) {
+      .shop {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
 
-\</style>
-\</head>
+    /* PHONES */
+    @media (max-width: 520px) {
+      h1 {
+        font-size: 32px;
+      }
 
-\<body>
+      .tagline {
+        font-size: 17px;
+      }
 
-\<div class="announcement">
-✨ Handmade Bracelets • PKR 200 Each • Duo Bracelet PKR 400 ✨
-\</div>
+      .shop {
+        grid-template-columns: 1fr;
+      }
 
-\<img src="Screenshot 2026-06-10 2.15.13 AM.png" class="logo">
+      .card {
+        width: 230px;
+      }
+    }
+  </style>
+</head>
 
-\<h1>💖 Pookz-n-Pearlz 💖\</h1>
+<body>
 
-\<p class="tagline">
-💎 A little sparkle for your everyday story ✨
-\</p>
-    <div class="emailbox">
-📩 Order by Email: <b>shop.pookznpearlz@gmail.com</b>
-</div>
+  <div class="announcement">
+    ✨ Handmade Bracelets • PKR 200 Each • Duo Bracelet PKR 400 ✨
+  </div>
 
-<div class="shop">
-<div class="card">
-    <img src="Screenshot 2026-08-07 10.03.51 PM.png">
-    <h3>🇵🇰 14 August Bracelet</h3>
-    <p class="price">PKR 200</p>
-    <a class="btn" href="mailto:shop.pookznpearlz@gmail.com?subject=Order 14 August Bracelet">
+  <img
+    src="Screenshot 2026-06-10 2.15.13 AM.png"
+    class="logo"
+    alt="Pookz-n-Pearlz Logo"
+  >
+
+  <h1>💖 Pookz-n-Pearlz 💖</h1>
+
+  <p class="tagline">
+    💎 A little sparkle for your everyday story ✨
+  </p>
+
+  <div class="emailbox">
+    📩 Order by Email:
+    <b>shop.pookznpearlz@gmail.com</b>
+  </div>
+
+
+  <!-- ========================= -->
+  <!-- BRACELET COLLECTION -->
+  <!-- ========================= -->
+
+  <div class="shop">
+
+
+    <!-- 14 AUGUST COLLECTION -->
+
+    <div class="card">
+      <img
+        src="Screenshot 2026-08-07 10.03.51 PM.png"
+        alt="14 August Bracelet"
+      >
+      <h3>🇵🇰 14 August Bracelet</h3>
+      <p class="price">PKR 200</p>
+      <a
+        class="btn"
+        href="mailto:shop.pookznpearlz@gmail.com?subject=Order%2014%20August%20Bracelet"
+      >
         Order 💌
-    </a>
-</div>
+      </a>
+    </div>
 
-<div class="card">
-    <img src="Screenshot 2026-08-07 10.03.59 PM.png">
-    <h3>🇵🇰 14 August Bracelet ~</h3>
-    <p class="price">PKR 200</p>
-    <a class="btn" href="mailto:shop.pookznpearlz@gmail.com?subject=Order 14 August Bracelet ~">
+
+    <div class="card">
+      <img
+        src="Screenshot 2026-08-07 10.03.59 PM.png"
+        alt="14 August Bracelet"
+      >
+      <h3>🇵🇰 14 August Bracelet ~</h3>
+      <p class="price">PKR 200</p>
+      <a
+        class="btn"
+        href="mailto:shop.pookznpearlz@gmail.com?subject=Order%2014%20August%20Bracelet"
+      >
         Order 💌
-    </a>
-</div>
-\<div class="emailbox">
-📩 Order by Email: \<b>[shop.pookznpearlz@gmail.com](mailto\:shop.pookznpearlz@gmail.com)\</b>
-\</div>
-\</html>   </div><div class="shop"><div class="card">  <img src="Screenshot 2026-08-02 7.20.10 PM.png">  <h3>🤎 Sticky Rolls Bracelet</h3>  <p class="price">PKR 200</p>  <a class="btn" href="mailto:shop.pookznpearlz@gmail.com?subject=Order Sticky Rolls Bracelet">Order 💌</a></div><div class="card">  <img src="Screenshot 2026-08-02 7.20.18 PM.png">  <h3>🤎 Sticky Rolls Bracelet ~</h3>  <p class="price">PKR 200</p>  <a class="btn" href="mailto:shop.pookznpearlz@gmail.com?subject=Order Sticky Rolls Bracelet ~">Order 💌</a></div>  <!-- NEW COLLECTION -->  <div class="card">    <img src="Screenshot 2026-07-10 7.30.32 PM.png">
-\<div class="shop">
-\<div class="card">
-\<img src="Screenshot 2026-08-02 7.20.10 PM.png">
-\<h3>🤎 Sticky Rolls Bracelet\</h3>
-\<p class="price">PKR 200\</p>
-\<a class="btn" href="mailto:[shop.pookznpearlz@gmail.com](mailto\:shop.pookznpearlz@gmail.com)?subject=Order Sticky Rolls Bracelet">Order 💌\</a>
-\</div>
-
-\<div class="card">
-\<img src="Screenshot 2026-08-02 7.20.18 PM.png">
-\<h3>🤎 Sticky Rolls Bracelet \~\</h3>
-\<p class="price">PKR 200\</p>
-\<a class="btn" href="mailto:[shop.pookznpearlz@gmail.com](mailto\:shop.pookznpearlz@gmail.com)?subject=Order Sticky Rolls Bracelet \~">Order 💌\</a>
-\</div>
-\<!-- NEW COLLECTION -->
-\<div class="card">
-\<img src="Screenshot 2026-07-10 7.30.32 PM.png">
-\<h3>💙 Like\~ (Blue Bracelet)\</h3>
-\<p class="price">PKR 200\</p>
-\<a class="btn" href="mailto:[shop.pookznpearlz@gmail.com](mailto\:shop.pookznpearlz@gmail.com)?subject=Order Like Blue Bracelet">Order 💌\</a>
-\</div>
-\<div class="card">
-\<img src="Screenshot 2026-06-10 11.36.24 PM.png">
-\<h3>💖 Pink "Name" Bracelet\</h3>
-\<p class="price">PKR 200\</p>
-\<a class="btn" href="mailto:[shop.pookznpearlz@gmail.com](mailto\:shop.pookznpearlz@gmail.com)?subject=Order Pink Name Bracelet">Order 💌\</a>
-\</div>
-
-\<div class="card">
-\<img src="Screenshot 2026-06-10 11.36.31 PM.png">
-\<h3>💛 Initial S Bracelet (Yellow)\</h3>
-\<p class="price">PKR 200\</p>
-\<a class="btn" href="mailto:[shop.pookznpearlz@gmail.com](mailto\:shop.pookznpearlz@gmail.com)?subject=Order Initial S Bracelet">Order 💌\</a>
-\</div>
-
-\<div class="card">
-\<img src="Screenshot 2026-06-10 11.36.43 PM.png">
-\<h3>💚 Green "Sing" Bracelet\</h3>
-\<p class="price">PKR 200\</p>
-\<a class="btn" href="mailto:[shop.pookznpearlz@gmail.com](mailto\:shop.pookznpearlz@gmail.com)?subject=Order Green Sing Bracelet">Order 💌\</a>
-\</div>
-
-\<!-- ORIGINAL COLLECTION -->
-
-\<div class="card">
-\<img src="Initial A Bracelet.png">
-\<h3>💜 Initial A Bracelet\</h3>
-\<p class="price">PKR 200\</p>
-\<a class="btn" href="mailto:[shop.pookznpearlz@gmail.com](mailto\:shop.pookznpearlz@gmail.com)?subject=Order Initial A Bracelet">Order 💌\</a>
-\</div>
-
-\<div class="card">
-\<img src="Screenshot 2026-06-15 11.35.44 PM.png">
-\<h3>🪻 Purple Clay Beads Bracelet\</h3>
-\<p class="price">PKR 200\</p>
-\<a class="btn" href="mailto:[shop.pookznpearlz@gmail.com](mailto\:shop.pookznpearlz@gmail.com)?subject=Order Purple Clay Beads Bracelet">Order 💌\</a>
-\</div>
-
-\<div class="card">
-\<img src="Blue and purple duo bracelets.png">
-\<h3>💙 Blue & Purple Duo Bracelet\</h3>
-\<p class="price">PKR 400\</p>
-\<a class="btn" href="mailto:[shop.pookznpearlz@gmail.com](mailto\:shop.pookznpearlz@gmail.com)?subject=Order Blue and Purple Duo Bracelet">Order 💌\</a>
-\</div>
-
-\<div class="card">
-\<img src="Screenshot 2026-06-15 11.35.28 PM.png">
-\<h3>🎀 Purple Bow Bracelet\</h3>
-\<p class="price">PKR 200\</p>
-\<a class="btn" href="mailto:[shop.pookznpearlz@gmail.com](mailto\:shop.pookznpearlz@gmail.com)?subject=Order Purple Bow Bracelet">Order 💌\</a>
-\</div>
-
-\<div class="card">
-\<img src="Screenshot 2026-06-15 11.35.23 PM.png">
-\<h3>🤍 Purple Clay Pearl Bracelet\</h3>
-\<p class="price">PKR 200\</p>
-\<a class="btn" href="mailto:[shop.pookznpearlz@gmail.com](mailto\:shop.pookznpearlz@gmail.com)?subject=Order Purple Clay Pearl Bracelet">Order 💌\</a>
-\</div>
-
-\<div class="card">
-\<img src="Screenshot 2026-06-15 11.35.33 PM.png">
-\<h3>🌈 Rainbow Rush Bracelet\</h3>
-\<p class="price">PKR 200\</p>
-\<a class="btn" href="mailto:[shop.pookznpearlz@gmail.com](mailto\:shop.pookznpearlz@gmail.com)?subject=Order Rainbow Rush Bracelet">Order 💌\</a>
-\</div>
-
-\<div class="card">
-\<img src="Screenshot 2026-06-15 11.35.17 PM.png">
-\<h3>💗 Pink "Good" Bracelet\</h3>
-\<p class="price">PKR 200\</p>
-\<a class="btn" href="mailto:[shop.pookznpearlz@gmail.com](mailto\:shop.pookznpearlz@gmail.com)?subject=Order Pink Good Bracelet">Order 💌\</a>
-\</div>
-
-\<!-- NEW BRACELET -->
-
-\</div>
-
-\<footer>
-🎀 Handmade with love • Thank you for supporting Pookz-n-Pearlz 💖
-\</footer>
-
-\</body> 
-  <!-- 14 AUGUST COLLECTION -->
-
-  <div class="card">
-    <img src="Screenshot 2026-08-07 10.03.51 PM.png"
-         alt="14 August Bracelet">
-    <h3>🩷 14 August Bracelet</h3>
-    <p class="price">PKR 200</p>
-    <a class="btn"
-       href="mailto:shop.pookznpearlz@gmail.com?subject=Order%2014%20August%20Bracelet">
-      Order 💌
-    </a>
-  </div>
-
-  <div class="card">
-    <img src="Screenshot 2026-08-07 10.03.59 PM.png"
-         alt="14 August Bracelet">
-    <h3>💚 14 August Bracelet</h3>
-    <p class="price">PKR 200</p>
-    <a class="btn"
-       href="mailto:shop.pookznpearlz@gmail.com?subject=Order%2014%20August%20Bracelet">
-      Order 💌
-    </a>
-  </div>
+      </a>
+    </div>
 
 
-  <!-- STICKY ROLLS COLLECTION -->
+    <!-- STICKY ROLLS -->
 
-  <div class="card">
-    <img src="Screenshot 2026-08-02 7.20.10 PM.png"
-         alt="Sticky Rolls Bracelet">
-    <h3>🤎 Sticky Rolls Bracelet</h3>
-    <p class="price">PKR 200</p>
-    <a class="btn"
-       href="mailto:shop.pookznpearlz@gmail.com?subject=Order%20Sticky%20Rolls%20Bracelet">
-      Order 💌
-    </a>
-  </div>
-
-  <div class="card">
-    <img src="Screenshot 2026-08-02 7.20.18 PM.png"
-         alt="Sticky Rolls Bracelet">
-    <h3>🤎 Sticky Rolls Bracelet ~</h3>
-    <p class="price">PKR 200</p>
-    <a class="btn"
-       href="mailto:shop.pookznpearlz@gmail.com?subject=Order%20Sticky%20Rolls%20Bracelet">
-      Order 💌
-    </a>
-  </div>
+    <div class="card">
+      <img
+        src="Screenshot 2026-08-02 7.20.10 PM.png"
+        alt="Sticky Rolls Bracelet"
+      >
+      <h3>🤎 Sticky Rolls Bracelet</h3>
+      <p class="price">PKR 200</p>
+      <a
+        class="btn"
+        href="mailto:shop.pookznpearlz@gmail.com?subject=Order%20Sticky%20Rolls%20Bracelet"
+      >
+        Order 💌
+      </a>
+    </div>
 
 
-  <!-- NEW COLLECTION -->
+    <div class="card">
+      <img
+        src="Screenshot 2026-08-02 7.20.18 PM.png"
+        alt="Sticky Rolls Bracelet"
+      >
+      <h3>🤎 Sticky Rolls Bracelet ~</h3>
+      <p class="price">PKR 200</p>
+      <a
+        class="btn"
+        href="mailto:shop.pookznpearlz@gmail.com?subject=Order%20Sticky%20Rolls%20Bracelet"
+      >
+        Order 💌
+      </a>
+    </div>
 
-  <div class="card">
-    <img src="Screenshot 2026-07-10 7.30.32 PM.png"
-         alt="Like Blue Bracelet">
-    <h3>💙 Like~ (Blue Bracelet)</h3>
-    <p class="price">PKR 200</p>
-    <a class="btn"
-       href="mailto:shop.pookznpearlz@gmail.com?subject=Order%20Like%20Blue%20Bracelet">
-      Order 💌
-    </a>
-  </div>
 
-  <div class="card">
-    <img src="Screenshot 2026-06-10 11.36.24 PM.png"
-         alt="Pink Name Bracelet">
-    <h3>💖 Pink "Name" Bracelet</h3>
-    <p class="price">PKR 200</p>
-    <a class="btn"
-       href="mailto:shop.pookznpearlz@gmail.com?subject=Order%20Pink%20Name%20Bracelet">
-      Order 💌
-    </a>
-  </div>
+    <!-- NEW COLLECTION -->
 
-  <div class="card">
-    <img src="Screenshot 2026-06-10 11.36.31 PM.png"
-         alt="Initial S Bracelet">
-    <h3>💛 Initial S Bracelet (Yellow)</h3>
-    <p class="price">PKR 200</p>
-    <a class="btn"
-       href="mailto:shop.pookznpearlz@gmail.com?subject=Order%20Initial%20S%20Bracelet">
-      Order 💌
-    </a>
-  </div>
+    <div class="card">
+      <img
+        src="Screenshot 2026-07-10 7.30.32 PM.png"
+        alt="Like Blue Bracelet"
+      >
+      <h3>💙 Like~ (Blue Bracelet)</h3>
+      <p class="price">PKR 200</p>
+      <a
+        class="btn"
+        href="mailto:shop.pookznpearlz@gmail.com?subject=Order%20Like%20Blue%20Bracelet"
+      >
+        Order 💌
+      </a>
+    </div>
 
-  <div class="card">
-    <img src="Screenshot 2026-06-10 11.36.43 PM.png"
-         alt="Green Sing Bracelet">
-    <h3>💚 Green "Sing" Bracelet</h3>
-    <p class="price">PKR 200</p>
-    <a class="btn"
-       href="mailto:shop.pookznpearlz@gmail.com?subject=Order%20Green%20Sing%20Bracelet">
-      Order 💌
-    </a>
-  </div>
+
+    <div class="card">
+      <img
+        src="Screenshot 2026-06-10 11.36.24 PM.png"
+        alt="Pink Name Bracelet"
+      >
+      <h3>💖 Pink "Name" Bracelet</h3>
+      <p class="price">PKR 200</p>
+      <a
+        class="btn"
+        href="mailto:shop.pookznpearlz@gmail.com?subject=Order%20Pink%20Name%20Bracelet"
+      >
+        Order 💌
+      </a>
+    </div>
+
+
+    <div class="card">
+      <img
+        src="Screenshot 2026-06-10 11.36.31 PM.png"
+        alt="Initial S Bracelet"
+      >
+      <h3>💛 Initial S Bracelet (Yellow)</h3>
+      <p class="price">PKR 200</p>
+      <a
+        class="btn"
+        href="mailto:shop.pookznpearlz@gmail.com?subject=Order%20Initial%20S%20Bracelet"
+      >
+        Order 💌
+      </a>
+    </div>
+
+
+    <div class="card">
+      <img
+        src="Screenshot 2026-06-10 11.36.43 PM.png"
+        alt="Green Sing Bracelet"
+      >
+      <h3>💚 Green "Sing" Bracelet</h3>
+      <p class="price">PKR 200</p>
+      <a
+        class="btn"
+        href="mailto:shop.pookznpearlz@gmail.com?subject=Order%20Green%20Sing%20Bracelet"
+      >
+        Order 💌
+      </a>
+    </div>
+
+
     <!-- ORIGINAL COLLECTION -->
 
-  <div class="card">
-    <img src="Initial A Bracelet.png"
-         alt="Initial A Bracelet">
-    <h3>💜 Initial A Bracelet</h3>
-    <p class="price">PKR 200</p>
-    <a class="btn"
-       href="mailto:shop.pookznpearlz@gmail.com?subject=Order%20Initial%20A%20Bracelet">
-      Order 💌
-    </a>
+    <div class="card">
+      <img
+        src="Initial A Bracelet.png"
+        alt="Initial A Bracelet"
+      >
+      <h3>💜 Initial A Bracelet</h3>
+      <p class="price">PKR 200</p>
+      <a
+        class="btn"
+        href="mailto:shop.pookznpearlz@gmail.com?subject=Order%20Initial%20A%20Bracelet"
+      >
+        Order 💌
+      </a>
+    </div>
+
+
+    <div class="card">
+      <img
+        src="Screenshot 2026-06-15 11.35.44 PM.png"
+        alt="Purple Clay Beads Bracelet"
+      >
+      <h3>🪻 Purple Clay Beads Bracelet</h3>
+      <p class="price">PKR 200</p>
+      <a
+        class="btn"
+        href="mailto:shop.pookznpearlz@gmail.com?subject=Order%20Purple%20Clay%20Beads%20Bracelet"
+      >
+        Order 💌
+      </a>
+    </div>
+
+
+    <div class="card">
+      <img
+        src="Blue and purple duo bracelets.png"
+        alt="Blue and Purple Duo Bracelet"
+      >
+      <h3>💙 Blue & Purple Duo Bracelet</h3>
+      <p class="price">PKR 400</p>
+      <a
+        class="btn"
+        href="mailto:shop.pookznpearlz@gmail.com?subject=Order%20Blue%20and%20Purple%20Duo%20Bracelet"
+      >
+        Order 💌
+      </a>
+    </div>
+
+
+    <div class="card">
+      <img
+        src="Screenshot 2026-06-15 11.35.28 PM.png"
+        alt="Purple Bow Bracelet"
+      >
+      <h3>🎀 Purple Bow Bracelet</h3>
+      <p class="price">PKR 200</p>
+      <a
+        class="btn"
+        href="mailto:shop.pookznpearlz@gmail.com?subject=Order%20Purple%20Bow%20Bracelet"
+      >
+        Order 💌
+      </a>
+    </div>
+
+
+    <div class="card">
+      <img
+        src="Screenshot 2026-06-15 11.35.23 PM.png"
+        alt="Purple Clay Pearl Bracelet"
+      >
+      <h3>🤍 Purple Clay Pearl Bracelet</h3>
+      <p class="price">PKR 200</p>
+      <a
+        class="btn"
+        href="mailto:shop.pookznpearlz@gmail.com?subject=Order%20Purple%20Clay%20Pearl%20Bracelet"
+      >
+        Order 💌
+      </a>
+    </div>
+
+
+    <div class="card">
+      <img
+        src="Screenshot 2026-06-15 11.35.33 PM.png"
+        alt="Rainbow Rush Bracelet"
+      >
+      <h3>🌈 Rainbow Rush Bracelet</h3>
+      <p class="price">PKR 200</p>
+      <a
+        class="btn"
+        href="mailto:shop.pookznpearlz@gmail.com?subject=Order%20Rainbow%20Rush%20Bracelet"
+      >
+        Order 💌
+      </a>
+    </div>
+
+
+    <div class="card">
+      <img
+        src="Screenshot 2026-06-15 11.35.17 PM.png"
+        alt="Pink Good Bracelet"
+      >
+      <h3>💗 Pink "Good" Bracelet</h3>
+      <p class="price">PKR 200</p>
+      <a
+        class="btn"
+        href="mailto:shop.pookznpearlz@gmail.com?subject=Order%20Pink%20Good%20Bracelet"
+      >
+        Order 💌
+      </a>
+    </div>
+
   </div>
 
-  <div class="card">
-    <img src="Screenshot 2026-06-15 11.35.44 PM.png"
-         alt="Purple Clay Beads Bracelet">
-    <h3>🪻 Purple Clay Beads Bracelet</h3>
-    <p class="price">PKR 200</p>
-    <a class="btn"
-       href="mailto:shop.pookznpearlz@gmail.com?subject=Order%20Purple%20Clay%20Beads%20Bracelet">
-      Order 💌
-    </a>
-  </div>
 
-  <div class="card">
-    <img src="Blue and purple duo bracelets.png"
-         alt="Blue and Purple Duo Bracelet">
-    <h3>💙 Blue & Purple Duo Bracelet</h3>
-    <p class="price">PKR 400</p>
-    <a class="btn"
-       href="mailto:shop.pookznpearlz@gmail.com?subject=Order%20Blue%20and%20Purple%20Duo%20Bracelet">
-      Order 💌
-    </a>
-  </div>
-
-  <div class="card">
-    <img src="Screenshot 2026-06-15 11.35.28 PM.png"
-         alt="Purple Bow Bracelet">
-    <h3>🎀 Purple Bow Bracelet</h3>
-    <p class="price">PKR 200</p>
-    <a class="btn"
-       href="mailto:shop.pookznpearlz@gmail.com?subject=Order%20Purple%20Bow%20Bracelet">
-      Order 💌
-    </a>
-  </div>
-
-  <div class="card">
-    <img src="Screenshot 2026-06-15 11.35.23 PM.png"
-         alt="Purple Clay Pearl Bracelet">
-    <h3>🤍 Purple Clay Pearl Bracelet</h3>
-    <p class="price">PKR 200</p>
-    <a class="btn"
-       href="mailto:shop.pookznpearlz@gmail.com?subject=Order%20Purple%20Clay%20Pearl%20Bracelet">
-      Order 💌
-    </a>
-  </div>
-
-  <div class="card">
-    <img src="Screenshot 2026-06-15 11.35.33 PM.png"
-         alt="Rainbow Rush Bracelet">
-    <h3>🌈 Rainbow Rush Bracelet</h3>
-    <p class="price">PKR 200</p>
-    <a class="btn"
-       href="mailto:shop.pookznpearlz@gmail.com?subject=Order%20Rainbow%20Rush%20Bracelet">
-      Order 💌
-    </a>
-  </div>
-
-  <div class="card">
-    <img src="Screenshot 2026-06-15 11.35.17 PM.png"
-         alt="Pink Good Bracelet">
-    <h3>💗 Pink "Good" Bracelet</h3>
-    <p class="price">PKR 200</p>
-    <a class="btn"
-       href="mailto:shop.pookznpearlz@gmail.com?subject=Order%20Pink%20Good%20Bracelet">
-      Order 💌
-    </a>
-  </div>
-
-</div>
-
-<footer>
-  🎀 Handmade with love • Thank you for supporting Pookz-n-Pearlz 💖
-</footer>
+  <footer>
+    🎀 Handmade with love • Thank you for supporting Pookz-n-Pearlz 💖
+  </footer>
 
 </body>
-</html>
+</html> 
